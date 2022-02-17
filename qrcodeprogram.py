@@ -30,11 +30,9 @@ while True:
         textFile.write(Date.strftime("Date: %m/%d/%y \n"))
         textFile.write(Date.strftime("Time: %H:%M:%S"))  
         textFile.close()
-        # date_and_time_now = datetime.datetime.now()
-        # print(f"Date & Time: {date_and_time_now}")
+        
 
     cv2.imshow("Cathleah's QR Scanner", frame)
-    # cv2.waitKey(1)
     #press q to exit camera
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break 
